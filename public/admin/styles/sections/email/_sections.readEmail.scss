@@ -1,0 +1,225 @@
+//read email area style
+.read-email__area{
+    padding: 24px 0px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+}
+
+.read-email__body{
+    border-top: 1px solid #ECEDF0;
+    padding: 20px 24px;
+}
+
+.read-email__top{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(575px){
+        &__right{
+            display: none;
+        }
+    }
+}
+
+.read-eamil__subject{
+    display: flex;
+    align-items: center;
+    h2{
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #273041;
+    }
+    span{
+        margin-left: 15px;
+    }
+}
+
+.badge{
+    padding: 2px 5px 3px;
+    border-radius: 23px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    &.bg-purple{
+        background-color: #F0DAFF;
+        color: #BE63F9 !important;
+    }
+    &.bg-red{
+        background-color: #FFDADA;
+        color: #F96363 !important;
+    }
+}
+
+.read-eamil__info{
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(575px){
+        flex-direction: column;
+        align-items: flex-start;
+        .info__left{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.read-eamil__info .user__info{
+    display: flex;
+    .user__img{
+        margin-right: 15px;
+        img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    }
+    .user__right{
+        h2{
+            margin-bottom: 4px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #273041;
+        }
+    }
+}
+
+.read-eamil__info .user__right .dropdown{
+    .dropdown-toggle{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8E9AB2;
+    }
+    ul li{
+        &:not(:first-child){
+            margin-top: 5px;
+        }
+    }
+    .dropdown-item{
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8E9AB2;
+        span{
+            margin-left: 5px;
+            text-transform: inherit;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #273041;
+        }
+        
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
+.read-eamil__info .info__right .info__list{
+    display: flex;
+    align-items: center;
+    li{
+        &:not(:first-child){
+            margin-left: 20px;
+        }
+    }
+    .info-date{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #8E9AB2;
+    }
+}
+
+.read-email__text{
+    border-bottom: 1px solid #ECEDF0;
+    p{
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+}
+
+//attachment style
+.attachment{
+    &__area{
+        margin-top: 20px;
+    }
+    &__title{
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #273041;
+    }
+}
+
+.attachment__list{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    @include breakpoint(767px){
+        grid-template-columns: auto;
+    }
+    .list-item{
+        background: #FAFBFC;
+        border: 1px solid #EBEDF0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        &__left img{
+            width: 30px;
+            height: 40px;
+        }
+    }
+    
+    .list-item__right{
+        margin-left: 12px;
+        h2{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #8E9AB2;
+        }
+    }
+}
+
+.read-email__button{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    a{
+       width: 120px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        &:not(:first-child){
+            margin-left: 15px;
+        }
+    }
+}
+
+.read-email__area__top{
+    padding: 0px 24px;
+}

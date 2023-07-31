@@ -1,0 +1,37 @@
+//breadcrumb style
+.breadcrumb__content{
+    padding: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint(575px){
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        .breadcrumb__title{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.breadcrumb__title h2{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $white;
+}
+
+.breadcrumb__content .breadcrumb{
+    margin-bottom: 0;
+    li{
+        text-transform: capitalize;
+        font-size: 14px;
+        line-height: 24px;
+        color: #828A99;
+        &.active{
+            color: #D9E0EF;
+        }
+    }
+}

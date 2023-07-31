@@ -1,0 +1,314 @@
+//profile item style
+.profile__item{
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.profile__item__top{
+    margin-bottom: 23px;
+    text-align: center;
+    .user-img{
+        margin-bottom: 20px;
+        img{
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            border: 5px solid #FAFBFC;
+        }
+    }
+    
+    .user-text{
+        margin-bottom: 17px;
+        h2{
+            margin-bottom: 5px;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #273041;
+        }
+        h3{
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+    }
+}
+
+.profile__item__content{
+    margin-bottom: 20px;
+    h2{
+        margin-bottom: 7px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #273041;
+    }
+    p{
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+}
+
+.profile__item__list{
+    li{
+        &:not(:last-child){
+            padding-bottom: 7px;
+            border-bottom: 1px solid #ECEDF0;
+            margin-bottom: 7px;
+        }
+    }
+    .list-item{
+        display: flex;
+        align-items: flex-start;
+        h2{
+            min-width: 80px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #273041;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+    }
+}
+
+//profile inbox style
+.profile__inbox{
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.profile__inbox__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.profile__inbox__table table{
+    width: 100%;
+    tbody tr{
+        td{
+            padding: 17px 0;
+        }
+        &:first-child td{
+            padding-top: 0;
+        }
+        &:last-child td{
+            padding-bottom: 0;
+        }
+        &:not(:last-child){
+            border-bottom: 1px solid #ECEDF0;
+        }
+    }
+}
+
+.profile__inbox__table table{
+    .user-info{
+        display: flex;
+    }
+    
+    .user-img{
+        flex: 0 0 40px;
+        margin-right: 15px;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    
+    .user-text{
+        h2{
+            margin-bottom: 2px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #273041;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+    }
+}
+
+//profile status style
+.profile__status__area .status__item{
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    .status-img{
+        flex: 0 0 50px;
+        margin-right: 15px;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+        }
+    }
+    .status-text{
+        h2{
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #273041;
+        }
+        p{
+            margin-bottom: 0;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+    }
+}
+
+//profile timeline area style
+.profile__timeline__area{
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.profile__timeline__list{
+    h4{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+    h2{
+        margin-bottom: 2px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #273041;
+    }
+    h3{
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+    p{
+        margin-bottom: 27px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+    li{
+        &:last-child{
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .list-item{
+        display: flex;
+        .item-left{
+            margin-right: 46px;
+            min-width: 55px;
+        }
+    }
+    .list-item .item-left{
+        position: relative;
+        &::before{
+            position: absolute;
+            z-index: 1;
+            content: "";
+            top: 0;
+            right: -34px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 5px double #5991FF;
+            background-color: #FFFFFF;
+        }
+    }
+    .list-item .item-right{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -21px;
+            width: 3px;
+            height: 100%;
+            background-color: #EBEDF2;
+            border-radius: 9px;
+        }
+    }
+}
+
+//profile table style
+.profile__table__area{
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.item-title{
+    margin-bottom: 20px;
+    h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.profile__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.profile__table table{
+    width: 100%;
+    thead th{
+        padding: 14px 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #273041;
+    }
+    tbody td{
+        padding: 11px 20px;
+    }
+    tbody tr{
+        border-bottom: 1px solid #ECEDF0;
+        transition: 0.3s;
+        &:hover{
+            background: $white;
+            box-shadow: 0px 0px 15px rgba(161, 167, 179, 0.2);
+        }
+    }
+}
+
+.profile__table table{
+    .data-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+}

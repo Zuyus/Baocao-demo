@@ -1,0 +1,103 @@
+//compose email style
+.compose-email__area{
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    &__top{
+        padding: 15px 25px;
+    }
+    .orders__top__left,
+    .orders__top__right{
+        margin-bottom: 0;
+    }
+}
+
+.compose__bottom{
+    display: flex;
+    align-items: center;
+    button{
+        padding: 11px 29px;
+    }
+    .compose__attch__list{
+        margin-left: 25px;
+    }
+    @include breakpoint(480px){
+        flex-direction: column;
+        align-items: flex-start;
+        button{
+            order: 2;
+        }
+        .compose__attch__list{
+            margin-left: 0px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.compose__attch__list{
+    display: flex;
+    align-items: center;
+    li{
+        &:not(:first-child){
+            margin-left: 16px;
+        }
+    }
+    li .input__group{
+        margin-bottom: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background: #F1F2F5;
+        }
+    }
+}
+
+.compose__attch__list .input__group{
+    label{
+        margin-bottom: 0;
+    }
+    input[type='file']{
+        display: none;
+    }
+}
+
+.compose-email__close{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F1F2F5; 
+}
+
+.compose-email__body{
+    border-top: 1px solid #ECEDF0;
+    padding: 25px 25px 25px;
+    .input__group{
+        margin-bottom: 20px;
+    }
+}
+
+.ck.ck-editor__main{
+    background: #FAFBFC;
+    border: 0;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, 
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    background: #EBEDF0;
+    border: 1px solid transparent;
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred{
+    background: #FAFBFC;
+    border: 1px solid #DFE3EB;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}   

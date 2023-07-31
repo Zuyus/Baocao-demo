@@ -1,0 +1,104 @@
+
+//comming soon style
+.comming-soon{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-image: url("../images/background/bg-comming-soon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comming-soon__content{
+    text-align: center;
+    .item-img{
+        margin-bottom: 56px;
+    }
+    .item-text{
+        margin-bottom: 35px;
+        h2{
+            margin-bottom: 2px;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 65px;
+            color: #FFFFFF;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+    @include breakpoint(575px){
+        .item-text{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+    
+    @include breakpoint(480px){
+        .item-text{
+            h2{
+                font-size: 26px;
+                line-height: 35px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.comming-soon__content .countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .countdown-item{
+        &:not(:first-child){
+            margin-left: 120px;
+        }
+    }
+    
+    @include breakpoint(767px){
+        .countdown-item{
+            &:not(:first-child){
+                margin-left: 30px;
+            }
+        } 
+    }
+    
+    .countdown-item{
+        h2{
+            margin-bottom: 6px;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+    }
+    @include breakpoint(480px){
+        .countdown-item{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

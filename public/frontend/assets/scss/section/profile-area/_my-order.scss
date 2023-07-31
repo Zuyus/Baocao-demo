@@ -1,0 +1,185 @@
+/*-------------------------
+#.My Order Page-area
+--------------------------*/
+.my-order-page-box {
+     .order-table {
+          .table>thead {
+               background-color: #EEEEEE;
+               margin-bottom: 20px;
+           }
+           thead tr th {
+               padding: 1.5rem!important;
+           }
+           .single-item {
+               height: 60px;
+               width: 60px;
+               img {
+                    height: 60px;
+                    width: 100%;
+               }
+           }
+           tbody {
+               tr {
+                    background-color: #fff;
+                    border-top: 1px solid #EEEEEE;
+                    td {
+                         padding: 1.5rem;
+                         min-width: 160px;
+                         p {
+                              margin-bottom: .5rem;
+                         }
+                         a {
+                              color: var(--black);
+                              &:hover {
+                                   color: var(--primary-color)!important;
+                              }
+                         }
+                    }
+                }
+           }
+     }
+}
+
+// My review Page area Start
+.single-review-item {
+     padding: 20px;
+     border-bottom: 1px solid #EEEEEE;
+     .review-left {
+          height: 60px;
+          width: 60px;
+          margin-right: 10px;
+          img {
+               height: 60px;
+               width: 100%;
+          }
+     }
+     .review-right {
+          h4 {
+               a {
+                    color: var(--black);
+                    &:hover {
+                         color: var(--primary-color);
+                    }
+               }
+          }
+          p {
+               margin-bottom: 0;
+          }
+          .review-rating {
+               li {
+                    margin-right: 2px;
+                    i {
+                         color: #FCA610;
+                         font-size: 14px;
+                    }
+               }
+          }
+     }
+}
+// My review Page area End
+
+// Order Progress Page Area
+.order-progress {
+     margin: 25px 0;
+     display: -ms-grid;
+     display: grid;
+     -ms-grid-columns: (minmax(0, 1fr))[auto-fit];
+     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+     padding: 30px 20px 20px;
+
+     & .single-progress:first-child::after {
+          display: none;
+     }
+
+     .single-progress {
+          position: relative;
+          padding-top: 20px;
+          font-size: 15px;
+          color: rgba(108, 117, 125, 0.7);
+          border: none;
+          background-color: transparent;
+          // cursor: pointer;
+          text-align: center;
+     }
+     .single-progress:before {
+          position: absolute;
+          top: -4px;
+          left: 47%;
+          display: block;
+          content: "";
+          border-radius: 50%;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          z-index: 3;
+          background-color: var(--white);
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          background: #EEEEEE;
+          border: 4px solid #fff;
+          -webkit-box-shadow: 0 0 0 2px #EEEEEE;
+          box-shadow: 0 0 0 2px #EEEEEE;
+     }
+     .single-progress::after {
+          position: absolute;
+          top: 5px;
+          left: calc(-50% - 13px / 2);
+          display: block;
+          width: 100%;
+          height: 2px;
+          content: "";
+          background-color: #EEEEEE;
+          z-index: 1;
+      }
+     .single-progress.active {
+          color: #333333;
+      }
+     .single-progress.active::before {
+          background: #FCA610;
+          -webkit-box-shadow: 0 0 0 2px #EEEEEE;
+          box-shadow: 0 0 0 2px #FCA610;
+     }
+}
+
+.primary-btn.write-review-btn {
+     padding: .75rem 2rem!important;
+ }
+ 
+// Write Review CSS Start
+#writeReviewModal {
+     .form-control {
+          width: 100%;
+          height: 5.6rem;
+          border: 1px solid #C4C4C4;
+          border-radius: 0;
+          padding: 1.5rem 2rem;
+          font-family: "Jost",sans-serif;
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: #333333;
+      } 
+      textarea {
+          height: 80px;
+          border: 1px solid #C4C4C4;
+          width: 100%;
+          font-family: "Jost",sans-serif;
+          font-size: 1.5rem;
+          font-weight: 400;
+          padding: 1.5rem 2rem;
+      }  
+}
+// Write Review CSS End
+@media (min-width: 576px) {
+     #writeReviewModal .modal-dialog {
+          max-width: 600px;
+     }
+}
+@media (max-width: 480px) {
+     .single-review-item {
+          flex-direction: column;
+          align-items: flex-start!important;
+      }
+      .single-review-item .review-left {
+          margin-bottom: 15px;
+      }
+}

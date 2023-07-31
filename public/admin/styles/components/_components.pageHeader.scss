@@ -1,0 +1,15 @@
+.header-area{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eff4f7;
+    padding: 15px 0;
+    transition: 0.5s;
+    &.sticky{
+        padding: 5px 0;
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 30px;
+    }
+}

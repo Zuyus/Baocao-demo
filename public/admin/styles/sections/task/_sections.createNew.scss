@@ -1,0 +1,64 @@
+//create new task style
+.create-project .input__group{
+    position: relative;
+}
+
+.search-member-list{
+    position: absolute;
+    top: 70px;
+    left: 0; 
+    width: 100%;
+    background: $white;
+    border: 1px solid #EBEDF0;
+    box-shadow: 0px 10px 20px -5px rgba(163, 177, 204, 0.25);
+    border-radius: 4px;
+    margin-top: 1px;
+    padding: 20px 18px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: translateY(5px);
+    
+    &.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    
+    .list-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:first-child){
+            margin-top: 20px;
+        }
+    }
+    .user-info{
+        display: flex;
+        align-items: center;
+        img{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin-right: 14px;
+        }
+        h2{
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #273041;
+        }
+    }
+    
+    @include breakpoint(480px){
+        padding: 15px 10px;
+        .user-info{
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

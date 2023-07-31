@@ -1,0 +1,108 @@
+.user__item{
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    @include breakpoint(480px){
+        padding: 20px 15px;
+    }
+    &__top{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ECEDF0;
+        margin-bottom: 24px;
+    }
+    .user-img{
+        margin-bottom: 20px;
+        img{
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            border: 5px solid #FAFBFC;
+        }
+    }
+    .user-text{
+        margin-bottom: 17px;
+        h2{
+            margin-bottom: 5px;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #273041;
+        }
+        h3{
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+    }
+    .user-button{
+        display: flex;
+        justify-content: center;
+        margin-left: -10px;
+        a{
+            margin-left: 10px;
+        }
+    }
+}
+
+.user__item .overlay{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.user__item .overlay .dropdown{
+    button{
+        border: 0;
+        background-color: transparent;
+    }
+    .dropdown-menu{
+        background: #FFFFFF;
+        border: 1px solid #E9EDF5;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px rgba(163, 177, 204, 0.12), 0px 10px 20px -5px rgba(163, 177, 204, 0.2);
+        border-radius: 6px;
+    }
+    .dropdown-menu.show{
+        position: absolute;
+        inset: 0px 0px auto auto !important;
+        margin: 0px;
+        transform: translate(0px, 26px);
+    }
+    .dropdown-item{
+        padding: 5px 12px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+        span{
+            margin-left: 10px;
+        }
+    }
+}
+
+.user-status{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #273041;
+    }
+    p{
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+}

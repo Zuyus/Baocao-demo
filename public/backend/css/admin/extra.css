@@ -1,0 +1,165 @@
+.admin_image{
+    margin-top:15px;
+    height: 80px;
+    width: 100px;
+}
+.admin_image_two{
+    margin-top:15px;
+    height: 20px;
+    width: 250px;
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+
+.slider-page-form .tab-pane.fade {
+    display: none;
+}
+.slider-page-form .tab-pane.fade.active {
+    display: block;
+}
+
+/* Extra CSS Start Start*/
+table .btn-group-sm>.btn, .btn-sm {
+    margin-right: 7px;
+}
+.admin-blog-table .badge-success {
+    margin-right: 6px;
+}
+.select2-container {
+    max-width: 100%;
+    width: 100%!important;
+}
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #d1d3e2;
+}
+.badge.admin-old-price {
+    text-decoration: line-through;
+}
+.sidebar.toggled .sidebar-brand .sidebar-brand-icon img {
+    /* height: 1rem; */
+}
+/* Extra CSS Start End */
+#wrapper #content-wrapper #content {
+    display: flex;
+    flex-direction: column;
+}
+
+footer.sticky-footer {
+    margin-top: auto;
+}
+.product-create-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-create-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 64px;
+    border-radius: 5px;
+}
+.bubble-shadow-small:before {
+    position: absolute;
+    top: -70%;
+    right: -40%;
+    width: 80px;
+    height: 80px;
+    content: "";
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+}
+.bubble-shadow-small:after {
+    position: absolute;
+    top: -65%;
+    right: 40%;
+    width: 70px;
+    height: 70px;
+    content: "";
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+}
+.product-create-card .product-create-icon i {
+    color: white;
+    font-size: 25px;
+}
+.product-create-card h2 {
+    font-size: 18px;
+    color: #575962;
+}
+
+.product-create-card-link:hover {
+    text-decoration: none;
+}
+/* My Extra CSS Start */
+.transactions-chart-card, .sales-ratio-chart-card {
+    position: relative;
+}
+.transactions-chart-card .card-title, .sales-ratio-chart-card .card-title {
+    position: absolute;
+    top: 23px;
+}
+.transactions-chart-card .card-header, .sales-ratio-chart-card .card-header {
+    padding: 0 1.25rem;
+}
+
+.img-thumb-zai{
+    max-width: 120px;
+}
+/* My Extra CSS End */
+
+/* Home Varient Change CSS Start*/
+.theme-varient-wrap {
+    overflow: hidden;
+    width: 100%;
+}
+
+.theme-varient-wrap .btn {
+    width: 100%;
+    padding: 10px;
+}
+.theme-varient-wrap .btn.btn-outline-primary:hover img {
+    filter: none;
+}
+.theme-varient-wrap .btn.btn-outline-primary {
+    border: 2px solid #e5e5e5;
+    background-color: transparent;
+    border-radius: 7px;
+}
+.theme-varient-wrap .btn.btn-outline-primary:hover {
+    border: 2px solid #1e78ffc5;
+    background-color: transparent;
+}
+
+.screen{
+    width: 100%;
+    padding-top: 100%; 
+    margin: auto;
+    background-size: 100% auto;
+    cursor: pointer;
+    transition: background-position 5s linear;
+ }
+
+.screen:hover{
+    background-position: 0 100%
+ }
+
+ .theme-varient-wrap .btn-check:active+.btn-outline-primary, .theme-varient-wrap .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .theme-varient-wrap .btn-outline-primary:active {
+    background-color: transparent;
+    border-color: #0d6efd;
+    box-shadow: none!important;
+
+}
+@media (max-width: 991px) {
+    .theme-varient-wrap {
+        margin-bottom: 25px;
+    }
+}
+/* Home Varient Change CSS End */

@@ -1,0 +1,207 @@
+.task__item{
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.task__item__top{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.task__item .dropdown{
+    button{
+        border: 0;
+        background-color: transparent;
+    }
+    .dropdown-menu{
+        background: #FFFFFF;
+        border: 1px solid #E9EDF5;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px rgba(163, 177, 204, 0.12), 0px 10px 20px -5px rgba(163, 177, 204, 0.2);
+        border-radius: 6px;
+    }
+    .dropdown-menu.show{
+        position: absolute;
+        inset: 0px 0px auto auto !important;
+        margin: 0px;
+        transform: translate(0px, 26px);
+    }
+    .dropdown-item{
+        padding: 5px 12px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+        span{
+            margin-left: 10px;
+        }
+    }
+}
+
+.task__item .task__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.task__item .task__table table{
+    width: 100%;
+    tbody td{
+        padding: 15px 0;
+        border-bottom: 1px solid #ECEDF0;
+        &:not(:first-child){
+            padding-left: 15px;
+        }
+        &:nth-child(2){min-width: 250px;}
+        &:nth-child(3){min-width: 80px;}
+        &:nth-child(4){min-width: 150px;}
+        &:nth-child(5){min-width: 80px;}
+    }
+    .data-text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+    }
+    .user-img img{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    .data-info{
+        display: flex;
+        align-items: center;
+        img{
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+        }
+        span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #596680;
+        }
+    }
+}
+
+.task__item .task__table table{
+    .status{
+        background-color: #FF6628;
+        border-radius: 5px;
+        padding: 3px 5px 2px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: $white;
+    }
+    
+    .status.bg-red{
+        background-color: #FF6628;
+    }
+    
+    .status.bg-green{
+        background-color: #4CBF4C;
+    }
+    
+    .status.bg-yellow{
+        background-color: #FF9F38;
+    }
+}
+
+.task__chart__area{
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.task__chart__top{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item__left{
+        h2{
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #273041;
+        }
+    }
+}
+
+.latest-comments__item{
+    margin-bottom: 30px;
+    padding: 25px;
+}
+
+.latest-comments__title{
+    h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.latest-comments__item .latest-comments__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.latest-comments__item .latest-comments__table table{
+    width: 100%;
+    tbody td{
+        padding: 22px 0;
+        border-bottom: 1px solid #ECEDF0;
+        &:nth-child(1){min-width: 60px;}
+    }
+    
+    .user-img{
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    
+    .comment-info{
+        display: flex;
+        flex-direction: column;
+        .comment-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h2{
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #273041;
+        }
+        h3{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #596680;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+    }
+}

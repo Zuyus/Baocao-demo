@@ -1,0 +1,35 @@
+//color style
+.color__item{
+    padding: 25px 25px 30px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+}
+
+.color__item .item-title{
+    h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.color__item .color__list{
+    .list-item{
+        &:first-child{
+            border-radius: 10px 10px 0 0;
+        }
+        &:last-child{
+            border-radius: 0 0 10px 10px;
+        }
+    }
+    .list-item{
+        padding: 23px;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

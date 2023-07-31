@@ -1,0 +1,78 @@
+.cookie-consent {
+    position: fixed;
+    bottom: 8px;
+    left: 20px;
+    width: 310px;
+    padding-top: 7px;
+    height: 165px;
+    color: #000!important;
+    line-height: 26px;
+    padding-left: 23px;
+    padding-right: 33px;
+    font-size: 16px;
+    background: #F4F4F4;
+    z-index: 9999;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.allow-button {
+    height: 40px;
+    font-size: 15px;
+    line-height: 10px;
+    margin-top: 15px;
+}
+.js-cookie-consent .btn-close {
+    /* background: transparent url('data:image/svg+xml;utf8,<svg stroke="red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M1.458 1.458l21.084 21.084m0-21.084L1.458 22.542" /></svg>') no-repeat center top; */
+    background: transparent none;
+    top: 10px;
+    right: 8px;
+    padding: 0!important;
+    opacity: 1;
+}
+.close.admin-close-btn {
+    padding: 5px;
+    right: 3px;
+    color: #EF1B27;
+    opacity: 1;
+}
+.front-close-btn.btn-close {
+    top: 3px;
+    right: 3px;
+    font-size: 24px;
+    color: #EF1B27;
+}
+.close.admin-close-btn:hover, .front-close-btn.btn-close:hover {
+    color: #CC1F28;
+    opacity: 1!important;
+}
+.js-cookie-consent button:focus {
+    outline: none;
+}
+.js-cookie-consent .btn-close:focus {
+    box-shadow: none!important;
+}
+@media (max-width: 480px) {
+    .cookie-consent {
+        width: 280px;
+    }
+}
+
+.main-cookie-content .primary-btn {
+    display: inline-block;
+    padding: .5rem 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #EF1B27;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border: none;
+}
+.main-cookie-content .primary-btn:hover {
+    background-color: #CC1F28;
+    color: #fff;
+}

@@ -1,0 +1,81 @@
+/*-------------------------
+#.profile-area
+--------------------------*/
+// User Profile Left Sidebar
+.account-page-menu {
+    ul {
+         margin: 0;
+         padding: 0;
+         li {
+              list-style: none;
+              margin-bottom: 10px;
+              i {
+                   color: #333333;
+                   transition: $transition;
+                   margin-right: 10px;
+              }
+              a {
+                   display: flex;
+                   height: 50px;
+                   align-items: center;
+                   padding: 1.5rem;
+                   font-size: 15px;
+                   font-weight: 400;
+                   text-transform: capitalize;
+                   color: #333333;
+                   transition: $transition;
+              }
+              &:hover {
+                   i {
+                        color: var(--black);
+                   }
+                   a {
+                        background: #EBEBEB;
+                        color: var(--black);
+                   }
+              }
+               &.active {
+                    a {
+                         font-weight: 500;
+                         background: #EBEBEB;
+                         color: var(--black);
+                         i {
+                              color: var(--primary-color);
+                         }
+                    }
+               }
+         }
+         
+    }
+}
+
+.account-page-sidemenu {
+    margin-bottom: 50px;
+    background-color: #F6F6F6;
+    padding: 30px;
+}
+
+// User Profile Right Sidebar
+.user-profile-right-part {
+    background-color: #F6F6F6;
+    padding: 30px;
+}
+
+// My Profile Page Start
+.address-box.card {
+    padding: 30px;
+    min-height: 166px;
+}
+// My Profile Page End
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+     .account-page-menu ul li a {
+          font-size: 13px;
+     }
+}
+@media (max-width: 767px) {
+     .address-box.card {
+          margin-bottom: 20px;
+      }
+}

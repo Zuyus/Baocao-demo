@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: Multizai
+Author: zainiklab
+URI: #
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+    01. Settings style
+    02. Base style
+    03. Sections style
+    04. Components style
+    05. Utilities style
+
+------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/
+@import 'settings/settings.config'; 
+@import 'settings/settings.animations'; 
+@import 'settings/settings.colors'; 
+@import 'settings/settings.typography'; 
+@import 'settings/settings.breakpoints';
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import 'helper/reset.all'; 
+@import 'helper/helper.theme';
+
+/*--------------------------------
+03. Sections style
+--------------------------------*/
+//sidebar section
+@import 'sections/sidebar/sections.sidebar';
+
+//sidebar section
+@import 'sections/header/sections.header';
+
+//dashboard section
+@import 'sections/dashboard/sections.dashboardHospital';
+@import 'sections/dashboard/sections.dashboardCrypto';
+@import 'sections/dashboard/sections.dashboardEcommerce';
+@import 'sections/dashboard/sections.dashboard';
+
+//calender section
+@import 'sections/calender/sections.calender';
+
+//chat section
+@import 'sections/chat/sections.chat';
+
+//File manager section
+@import 'sections/fileManager/sections.fileManager';
+
+//Ecommerce section
+@import 'sections/ecommerce/sections.products';
+@import 'sections/ecommerce/sections.productDetails';
+@import 'sections/ecommerce/sections.addProduct';
+@import 'sections/ecommerce/sections.orderDetails';
+@import 'sections/ecommerce/sections.cart';
+@import 'sections/ecommerce/sections.checkout';
+
+//email section
+@import 'sections/email/sections.inbox';
+@import 'sections/email/sections.readEmail';
+@import 'sections/email/sections.emailTemplates';
+@import 'sections/email/sections.compose';
+
+//Projects section
+@import 'sections/projects/sections.projectGrid';
+@import 'sections/projects/sections.projectList';
+@import 'sections/projects/sections.projectOverview';
+@import 'sections/projects/sections.projectCreate';
+
+//Task section
+@import 'sections/task/sections.taskList';
+@import 'sections/task/sections.kanbanBoard';
+@import 'sections/task/section.taskDetails';
+@import 'sections/task/sections.createNew';
+
+//customers section
+@import 'sections/customers/sections.customers';
+
+//contacts section
+@import 'sections/contacts/sections.contactGrid';
+@import 'sections/contacts/sections.contactList';
+@import 'sections/contacts/sections.profile';
+
+//users section
+@import 'sections/users/sectiosn.userGrid';
+@import 'sections/users/sections.userList';
+@import 'sections/users/sections.userGroup';
+@import 'sections/users/sections.addUser';
+@import 'sections/users/sections.userTable';
+
+//note section
+@import 'sections/note/sections.note';
+
+//todo section
+@import 'sections/todo/sections.todo';
+
+//orders section
+@import 'sections/orders/sections.orders';
+
+//shop section
+@import 'sections/shops/sections.shops';
+
+//sellers section
+@import 'sections/sellers/sections.sellers';
+
+//social feed section
+@import 'sections/socialFeed/sections.socialFeed';
+
+//invoice section
+@import 'sections/invoice/sections.invoiceList';
+@import 'sections/invoice/sections.invoicePreview';
+@import 'sections/invoice/sections.addInvoice';
+
+//Blog section
+@import 'sections/blog/sections.blogGrid';
+@import 'sections/blog/sections.blogList';
+@import 'sections/blog/sections.blogDetails';
+
+//authentication section
+@import 'sections/authentication/sections.authentication';
+
+//faq section
+@import 'sections/faq/sections.faq';
+
+//testimonial section
+@import 'sections/testimonial/sections.testimonial';
+
+//comming soon section
+@import 'sections/commingSoon/sections.commingSoon';
+
+//tables section
+@import 'sections/tables/sections.tables';
+
+//icons section
+@import 'sections/icon/sections.icon';
+
+//settings section
+@import 'sections/settings/sections.settings';
+
+//gallery section
+@import 'sections/gallery/sections.gallery';
+
+//map section
+@import 'sections/map/sections.map';
+
+//charts section
+@import 'sections/charts/sections.charts';
+
+//pricing section
+@import 'sections/pricing/sections.pricing';
+
+//UI element section
+@import 'sections/uiElement/sections.color';
+@import 'sections/uiElement/sections.button';
+@import 'sections/uiElement/sections.typography';
+
+//footer section
+@import 'sections/footer/sections.footer';
+
+/*--------------------------------
+04. Components style
+--------------------------------*/
+@import 'components/components.breadcrumb';
+@import 'components/components.navbar';
+@import 'components/components.sectionTitle';
+@import 'components/components.buttons';
+@import 'components/components.pageHeader';
+@import 'components/components.pagination';
+@import 'components/components.form';
+@import 'components/components.comments';
+
+/*--------------------------------
+05. Utilities style
+--------------------------------*/
+@import 'utilities/utilites';

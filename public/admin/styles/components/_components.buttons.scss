@@ -1,0 +1,381 @@
+.btn{
+    padding: 13px;
+    //padding: 13px 25px;
+    border-radius: 10px;
+    //background-color: transparent;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    transition: 0.3s;
+    &:focus{
+        box-shadow: none;
+    } 
+    span{
+        margin-left: 10px;
+    }
+    &.rounded{
+        border-radius: 50px !important;
+    }
+    &.rounded-1{
+        border-radius: 10px !important;
+    }
+    &.large{
+        padding: 16px 25px !important;
+    }
+    &.small{
+        padding: 12px 25px !important;
+    }
+    &.ex-small{
+        padding: 9px 25px !important;
+    }
+    &.btn-blue{
+        background-color: #4D88FF;
+        color: $white;
+        transition: 0.3s;
+        &:hover{
+            background-color: #34579e;
+            color: $white;
+        }
+    }
+    &.btn-green{
+        background-color: $successColor;
+        color: $white;
+        transition: 0.3s;
+        &:hover{
+            background-color: #3ab83a;
+            color: $white;
+        }
+    }
+    &.btn-grey{
+        background: #EBEDF0;
+        color: #596680;
+        transition: 0.3s;
+        &:hover{
+            background-color: #b4bac4;
+            color: #596680;
+        }
+    }
+    &.btn-reply{
+        background: #F0DAFF;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $secondaryColor1;
+        &:hover{
+            background: #F0DAFF;
+        }
+    }
+    &.btn-forward{
+        background: #DAE9FF;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $primaryColor1;
+        &:hover{
+            background: #DAE9FF;
+        }
+    }
+    &.btn-purple{
+        background-color: $secondaryColor1;
+        color: $white;
+        &:hover{
+            background-color: rgb(75, 13, 66);
+            color: $white;
+        }
+    }
+    &.btn-outline-purple{
+        border-color: rgb(75, 13, 66);
+        background-color: transparent;
+        color: rgb(75, 13, 66);
+        &:hover{
+            background-color: rgb(75, 13, 66);
+            color: $white;
+        }
+    }
+    &.btn-red{
+        background-color: #F96363;
+        color: $white;
+        &:hover{
+            background-color: #c73b3b;
+            color: $white;
+        }
+    }
+    &.btn-export{
+        padding: 12px 20px 12px;
+        background: #F7EBFF;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $secondaryColor1;
+        transition: 0.3s;
+        &:hover{
+            background-color: #bdb1c4;
+            color: $white;
+        }
+    }
+    
+    &.btn-cart{
+        background: #FFFFFF;
+        border: 1px solid $primaryColor1;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $primaryColor1;
+        transition: 0.3s;
+        span{
+            margin-left: 9px;
+        }
+        &:hover{
+            background: $primaryColor1;
+            color: $white;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    &.btn-dropdown{
+        padding: 0;
+        border-radius: 0;
+        color: #6B83B2;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}
+
+.btn{
+    &.btn-success{
+        background-color: $successColor;
+        color: $white;
+        &:hover{
+            background-color: #228322;
+            color: $white;
+        }
+    }
+    &.btn-info{
+        background-color: $infoColor;
+        color: $white;
+        &:hover{
+            background-color: #1f80b1;
+            color: $white;
+        }
+    }
+    &.btn-warning{
+        background-color: $warningColor;
+        color: $white;
+        &:hover{
+            background-color: #c07423;
+            color: $white;
+        }
+    }
+    &.btn-danger{
+        background-color: $dangerColor;
+        color: $white;
+        &:hover{
+            background-color: #a0370d;
+            color: $white;
+        }
+    }
+    &.btn-dark{
+        background-color: $darkColor;
+        color: $white;
+        &:hover{
+            background-color: #0d121a;
+            color: $white;
+        }
+    }
+    &.btn-light{
+        background-color: #EBEDF0;
+        color: $darkColor;
+        &:hover{
+            background-color: #dadde0;
+            color: $darkColor;
+        }
+    }
+}
+
+.btn{
+    &.btn-outline-primary{
+        border: 1px solid $primaryColor1;
+        color: $primaryColor1;
+        &:hover{
+            background-color: $primaryColor1;
+            color: $white;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    &.btn-outline-secondary{
+        border: 1px solid $secondaryColor1;
+        color: $secondaryColor1;
+        &:hover{
+            background-color: $secondaryColor1;
+            color: $white;
+        }
+    }
+    &.btn-outline-success{
+        border: 1px solid $successColor;
+        color: $successColor;
+        &:hover{
+            background-color: $successColor;
+            color: $white;
+        }
+    }
+    &.btn-outline-info{
+        border: 1px solid $infoColor;
+        color: $infoColor;
+        &:hover{
+            background-color: $infoColor;
+            color: $white;
+        }
+    }
+    &.btn-outline-warning{
+        border: 1px solid $warningColor;
+        color: $warningColor;
+        &:hover{
+            background-color: $warningColor;
+            color: $white;
+        }
+    }
+    &.btn-outline-danger{
+        border: 1px solid $dangerColor;
+        color: $dangerColor;
+        &:hover{
+            background-color: $dangerColor;
+            color: $white;
+        }
+    }
+    &.btn-outline-dark{
+        border: 1px solid $darkColor;
+        color: $darkColor;
+        &:hover{
+            background-color: $darkColor;
+            color: $white;
+        }
+    }
+    &.btn-outline-light{
+        border: 1px solid #EBEDF0;
+        color: #273041;
+        &:hover{
+            background-color: #EBEDF0;
+            color: #273041;
+        }
+    }
+}
+
+.btn{
+    &.bg-primary-light-varient{
+        background: #DAE9FF;
+        border-radius: 10px;
+        color: #5991FF;
+    }
+    &.bg-secondary-light-varient{
+        background: #F0DAFF;
+        border-radius: 10px;
+        color: #BE63F9;
+    }
+    &.bg-success-light-varient{
+        background: #C8F7C8;
+        border-radius: 10px;
+        color: #4CBF4C;
+    }
+    &.bg-info-light-varient{
+        background: #DAF3FF;
+        border-radius: 10px;
+        color: #33BBFF;
+    }
+    &.bg-warning-light-varient{
+        background: #FAE3CA;
+        border-radius: 10px;
+        color: #FF9F38;
+    }
+    &.bg-danger-light-varient{
+        background: #FFDED1;
+        border-radius: 10px;
+        color: #FF6628;
+    }
+}
+
+.btn{
+    &.btn-print{
+        background: #D5FAD5;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $successColor;
+    }
+    &.btn-download{
+        background: #F0DAFF;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $secondaryColor1;
+    }
+    &.btn-send{
+        background: #DAE9FF;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $primaryColor1;
+    }
+}
+
+.text-link{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $primaryColor1;
+    transition: 0.3s;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+//button reply
+.btn-reply{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $secondaryColor1;
+    transition: 0.3s;
+    &:hover{
+        color: #af55eb;
+    }
+}
+
+//user button style
+.user-btn{
+    border-radius: 4px;
+    padding: 6px 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    &.bg-blue{
+        background: #DAE9FF;
+        color: $primaryColor1;
+    }
+    &.bg-purple{
+        background: #F0DAFF;
+        color: $secondaryColor1;
+    }
+}
+
+
+// button page style
+.button__area{
+    .btn{
+        padding: 13px 25px;
+    }
+}

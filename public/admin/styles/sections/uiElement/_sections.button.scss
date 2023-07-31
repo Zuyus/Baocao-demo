@@ -1,0 +1,105 @@
+//button page style
+.button__area{
+    padding: 25px 25px 30px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    .item-title{
+        margin-bottom: 30px;
+        h2{
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #273041;
+        }
+    }
+}
+
+.button__area .button__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px 0 0 -15px;
+    a{
+        margin: 15px 0 0 15px;
+    }
+    .item-between{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -15px 0 0 -15px;
+        .group-button{
+            margin: 15px 0 0 15px;
+        }
+    }
+}
+
+.button__list .group-button .nav.nav-tabs{
+    background: #F6F7FA;
+    border-radius: 8px;
+    padding: 2px;
+    .nav-link{
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #596680;
+        padding: 6px 15px !important;
+        border: 0;
+        &.active{
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(163, 177, 204, 0.15);
+            border-radius: 8px;
+            font-weight: 500;
+            color: #5991FF;
+        }
+    }
+    &.style-2 .nav-link{
+        &.active{
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+    @include breakpoint(480px){
+        .nav-link{
+            padding: 5px 10px !important;
+        }
+    }
+}
+
+
+.button__list .group-button-tab{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.button__list .group-button-tab .nav.nav-tabs{
+    .nav-link{
+        border: 0;
+        padding: 0 20px 10px !important;
+        border-bottom: 2px solid #EBEDF2;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #596680;
+        i{
+            font-size: 24px;
+            color: #596680;
+            margin-right: 10px;
+        }
+        &.active{
+            border-bottom: 2px solid #5991FF;
+            color: #5991FF;
+            i{
+                color: #5991FF;
+            }
+        }
+    }
+    @include breakpoint(480px){
+        .nav-link{
+            padding: 5px 10px !important;
+        }
+    }
+}

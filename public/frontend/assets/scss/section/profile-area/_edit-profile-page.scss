@@ -1,0 +1,74 @@
+/*-------------------------
+#.Edit profile Page-area
+--------------------------*/
+.user-profile-right-part {
+    .form-control {
+        border: 1px solid #C4C4C4;
+        height: 5.6rem;
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .profile-top .profile-image {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
+    .profile-top .profile-image .file-uplode-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        right: -5px;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        background: #FAFAFA;
+        color: #333333;
+        -webkit-box-shadow: 0px 0px 10px rgba(179, 168, 168, 0.25);
+        box-shadow: 0px 0px 10px rgba(179, 168, 168, 0.25);
+        border-radius: 2px;
+        cursor: pointer;
+        -webkit-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+    }
+    .profile-top .profile-image #fileuplode {
+        display: none;
+    }
+
+    // Tab CSS
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+    .nav-pills .nav-link {
+        background-color: #EBEBEB;
+        font-weight: 500;
+        padding: 1.5rem 1.5rem;
+        color: var(--black);
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .user-profile-right-part .nav-pills .nav-link {
+        padding: 1rem .75rem;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}

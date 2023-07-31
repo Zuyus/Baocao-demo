@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: $titleColor;
+  font-family: $bodyFontFamily;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  background: $bodyColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #272E35;
+  font-family: $bodyFontFamily;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+h1{
+  font-size: 32px;
+  line-height: 40px;
+}
+h2{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596680;
+}
+h3{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #596680;
+}
+
+p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #596680;
+}
+
+::selection{
+  background-color: $themeColor;
+  color: $white;
+}
+
+::-moz-selection{
+  background-color: $themeColor;
+  color: $white;
+}
+
+a,
+.btn,
+button{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  &:focus{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    border: none;
+  }
+}
+
+a,
+button,
+img,
+input,
+span,
+::before,
+::after{
+  transition: all 0.3s ease 0s;
+}
+
+*:focus{
+  outline: none;
+}
+
+button,
+input[type="submit"]{
+  cursor: pointer;
+}
+
+button{
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.btn{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+}

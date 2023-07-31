@@ -1,0 +1,183 @@
+.invoice-preview__area{
+    padding: 50px 40px 30px;
+    margin-bottom: 40px;
+}
+
+.invoice-preview__top{
+    margin-bottom: 33px;
+    &.preview{
+        padding-bottom: 33px;
+        border-bottom: 1px solid #ECEDF0;
+        margin-bottom: 22px;
+    }
+    .brand-img{
+        display: block;
+        margin-bottom: 23px;
+        img{
+            width: 131px;
+            height: 32px;
+        }
+    }
+    .invoice-preview__top__text{
+        h2{
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+    }
+}
+
+.invoice-preview__content{
+    margin-bottom: 40px;
+    background: #F5F7FA;
+    border-radius: 10px;
+    padding: 23px 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 60px;
+    @include breakpoint(991px){
+        grid-template-columns: auto auto;
+        grid-row-gap: 30px;
+    }
+    @include breakpoint(575px){
+        grid-template-columns: auto;
+    }
+    .single-item{
+        h2{
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: #273041;
+        }
+        h3{
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+        h4{
+            text-transform: capitalize;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+    }
+}
+
+.invoice-preview__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.invoice-preview__table table{
+    width: 100%;
+    thead th{
+        padding: 13px 30px;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #273041;
+    }
+    tbody td{
+        padding: 16px 30px;
+        border-bottom: 1px solid #ECEDF0;
+    }
+    tfoot td{
+        padding: 8px 30px;
+        &:nth-child(1){
+            text-align: right;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+        &:nth-child(2){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #273041;
+            text-align: right;
+            input{
+                text-align: right;
+            }
+        }
+    }
+}
+
+.invoice-preview__table table{
+    .product-info{
+        h2{
+            margin-bottom: 7px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #273041;
+        }
+        ul{
+            display: flex;
+            text-align: center;
+            margin-left: -20px;
+            li{
+                margin-left: 20px;
+            }
+        }
+        .list-item{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+            span{
+                color: #273041;
+            }
+        }
+    }
+    .data-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+    }
+    .total-data{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        color: #BE63F9;
+    }
+}
+
+.invoice-preview__bottom{
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: -15px;
+    a{
+        margin-left: 15px;
+        min-width: 120px;
+    }
+    @include breakpoint(480px){
+        margin-top: 30px;
+        flex-direction: column;
+        a{
+            margin-left: 15px;
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+}

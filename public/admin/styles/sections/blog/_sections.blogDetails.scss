@@ -1,0 +1,97 @@
+.blog__details__area{
+    margin-bottom: 30px;
+    padding: 31px 30px;
+}
+
+.blog__details__meta{
+    display: flex;
+    justify-content: space-between;
+    h3,
+    h2{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+        margin-bottom: 24px;
+    }
+    @include breakpoint(480px){
+        flex-direction: column;
+    }
+}
+
+.blog__Details__title{
+    h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: #273041;
+        margin-bottom: 27px;
+    }
+}
+
+.blog__details__img{
+    margin-bottom: 23px;
+    background: #F8F9FA;
+    border-radius: 12px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+.blog__details__content{
+    p{
+        margin: 16px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #596680
+    }
+    blockquote{
+        max-width: 496px;
+        padding-left: 25px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        @include breakpoint(575px){
+            max-width: 100%;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #DCDFE5;
+        }
+        span{
+            margin-top: 16px;
+            padding-top: 4px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 1px;
+                background-color: #DCDFE5;
+            }
+        }
+    }
+    ul{
+        margin-left: 13px;
+        list-style: disc;
+        li{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            color: #596680;
+        }
+    }
+}

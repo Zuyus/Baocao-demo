@@ -1,0 +1,95 @@
+.input__group-2{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    @include breakpoint(767px){
+        grid-template-columns: 100%;
+        .input__group{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.input__group-3{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    @include breakpoint(767px){
+        grid-template-columns: 100%;
+        .input__group{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.input__group{
+    input{
+        &:focus{
+            border: 1px solid #5991FF;
+        }
+    }
+    select{
+        padding: 11px 16px 12px;
+        background: #FFFFFF;
+        // border: 1px solid #5991FF;
+        border: 1px solid transparent;
+        //box-shadow: 0px 0px 2px rgba(89, 145, 255, 0.7);
+        border-radius: 8px;
+        &:focus{
+            border: 1px solid #5991FF;
+        }
+    }
+}
+
+.invoice-preview__table table{
+    tbody td{
+        vertical-align: top;
+        &:nth-child(1){min-width: 20px;}
+        &:nth-child(2){min-width: 280px;}
+        &:nth-child(3){min-width: 150px;}
+        &:nth-child(4){min-width: 150px;}
+        &:nth-child(5){min-width: 150px;}
+    }
+    tfoot td{
+        input{
+            width: 100px;
+        }
+    }
+}
+
+.invoice-preview__table table{
+    td a{
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    input,
+    textarea{
+        background: #FAFBFC;
+        border: 1px solid #DFE3EB;
+        border-radius: 8px;
+        padding: 11px 16px 12px;
+    }
+    .product-input{
+        display: flex;
+        flex-direction: column;
+        input{
+            margin-bottom: 5px;
+        }
+        input,textarea{
+            width: 270px;
+        }
+    }
+    .data-input{
+        input{
+            width: 123px;
+        }
+    }
+    
+    .add-new-product{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

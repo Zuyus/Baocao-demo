@@ -1,0 +1,159 @@
+.sidebar__area{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: $bgSidebarColor;
+    transition: 0.4s;
+    &.active{
+        transform: translateX(0%);
+        width: 60px;
+        .sidebar__brand{
+            display: none;
+        }
+        .sidebar__menu{
+            margin-top: 60px;
+        }
+        .sidebar__menu li a{
+            padding: 10px 10px;
+        }
+        .sidebar__menu li a span{
+            display: none;
+        }
+        .sidebar__menu .submenu.active li a{
+            padding-left: 20px;
+        }
+    }
+    @include breakpoint(1199px){
+        transform: translateX(-100%);
+        &.active{
+            width: 250px;
+            .sidebar__brand{
+                display: block;
+            }
+            .sidebar__menu{
+                margin-top: 0;
+            }
+            .sidebar__menu li a{
+                padding: 11px 30px 9px;
+            }
+            .sidebar__menu li a{
+                display: flex;
+            }
+            .sidebar__menu li a span{
+                display: block;
+            }
+        }
+    }
+    
+}
+
+.sidebar__close{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    @include breakpoint(1199px){
+        display: block;
+    }
+    button{
+        border: 0;
+        background-color: transparent;
+        padding: 5px;
+        font-size: 20px;
+        color: #F96363;
+    }
+}
+
+.sidebar__brand{
+    padding: 24px 0 30px 30px;
+}
+
+//sidebar menu style
+.sidebar__menu{
+    width: 100%;
+    height: calc(100vh - 86px);
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    display: flex;
+    flex-direction: column;
+    li{
+        &:not(:first-child){
+            margin-top: 0px;
+        }
+    }
+    li a{
+        display: block;
+        padding: 11px 30px 9px;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #929BAC;
+        transition: 0.33s;
+        i{
+            color: #4B5A78;
+        }
+        span{
+            margin-left: 13px;
+        }
+        &.active,
+        &:hover{
+            background-color: #1B1F28;
+            color: $white;
+            i{
+                color: #4D88FF;
+            }
+        }
+    }
+    ul{
+        li a{
+            padding-left: 60px !important;
+            display: flex;
+            align-items: center;
+            i{
+                font-size: 4px;
+            }
+            span{
+                margin-left: 11px;
+            }
+            &:hover,
+            &.active{
+                background-color: #1B1F28;
+                color: $white;
+                i{
+                    color: #4D88FF;
+                }
+            }
+        }
+    }
+    ul ul li a{
+        padding-left: 70px !important;
+    }
+}
+
+.metismenu .mm-active> a{
+    background-color: #1B1F28;
+    color: $white;
+    i{
+        color: #4D88FF;
+    }
+}
+
+.metismenu .has-arrow{
+    position: relative;
+    &::after{
+     border-width: 0 1px 1px 0;
+    }
+}
+
+.metismenu .mm-active>.has-arrow::after,
+.metismenu .has-arrow[aria-expanded=true]::after {
+ transform:rotate(45deg) translate(0, -50%);
+}

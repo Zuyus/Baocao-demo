@@ -1,0 +1,181 @@
+//email sidebar style
+.email__sidebar{
+    padding: 24px 25px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+}
+
+.email__sidebar .sidebar__item{
+    h2{
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #273041;
+    }
+    &:not(:first-child){
+        margin-top: 30px;
+    }
+}
+
+.sidebar__item .sidebar__mail__nav{
+    li{
+        position: relative;
+        &:not(:first-child){
+            margin-top: 15px;
+        } 
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .list-item{
+        transition: 0.3s;
+        img{
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            transition: 0.3s;
+        }
+        span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+        &:hover,
+        &.active{
+            span{
+                color: #BE63F9;
+            }
+        }
+    }
+}
+
+.email__sidebar .sidebar__list{
+    li{
+        &:not(:first-child){
+            margin-top: 20px;
+        } 
+    }
+    .list-item{
+        display: flex;
+        align-items: center;
+    }
+    li span{
+        margin-right: 16px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+    }
+    li a{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+    }
+}
+
+.email-inbox__area{
+    padding: 24px 25px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+}
+
+.email-inbox__area .orders__top{
+    @include breakpoint(575px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__left{
+            order: 2;
+        }
+    }
+}
+
+.emai-inbox__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.emai-inbox__table table{
+    width: 100%;
+    tbody td{
+        padding: 15px 10px;
+        border-bottom: 1px solid #ECEDF0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+        &:nth-child(1){min-width: 30px;}
+        &:nth-child(2){min-width: 30px;}
+        &:nth-child(3){min-width: 200px;}
+        &:nth-child(4){min-width: 300px;}
+        &:nth-child(5){min-width: 100px;}
+    }
+    .user-info{
+        display: flex;
+        align-items: center;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+}
+
+.email-inbox__list{
+    display: flex;
+    align-items: center;
+    li{
+        &:not(:first-child){
+            margin-left: 10px;
+        }
+    }
+    li a{
+        font-weight: 400;
+    }
+    > li  button,
+    > li > a{
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.email-inbox__list .dropdown{
+    li{
+        &:not(:first-child){
+            margin-left: 0px;
+        }
+    }
+    li a{
+        text-transform: initial;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+        transition: 0.3s;
+        img{
+            width: 16px;
+            height: 16px;
+            transition: 0.3s;
+        }
+        span{
+            margin-left: 10px;
+        }
+        &:hover{
+            background: rgba(89, 145, 255, 0.1);
+            color: $themeColor;
+            img{
+                filter: invert(59%) sepia(83%) saturate(3011%) hue-rotate(198deg) brightness(99%) contrast(105%);
+            }
+        }
+    }
+}

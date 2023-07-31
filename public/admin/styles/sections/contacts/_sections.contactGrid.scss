@@ -1,0 +1,21 @@
+.user-contact{
+    text-align: left;
+    li{
+        &:not(:first-child){
+            margin-top: 15px;
+        }
+    }
+    .list-item{
+        img{
+            width: 17px;
+            height: 17px;
+        }
+        span{
+            margin-left: 12px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #596680;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+//icon item style
+.icon__item__area{
+    padding: 25px 25px 30px;
+    margin-bottom: 30px;
+}
+
+.icon__item__area .item-top-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item-top__left{
+        width: 70%;
+    }
+    .item-top__right{
+        width: 25%;
+    }
+    @include breakpoint(767px){
+        .item-top__left{
+            width: 58%;
+        }
+        .item-top__right{
+            width: 38%;
+        }
+    }
+    @include breakpoint(480px){
+        flex-direction: column;
+        .item-top__left{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .item-top__right{
+            width: 100%;
+        }
+    }
+}
+
+.icon__item__area .item-top .input__group,
+.icon__item__area .item-top-between .input__group{
+    input,
+    select{
+        width: 100%;
+        background: #F2F4F7;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+        &:focus{
+            border: 1px solid #5991FF;
+        }
+    }
+    .input-overlay input:focus + .overlay img {
+        filter: none;
+      }
+}
+
+.icon__item{
+    &__top h2{
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.icon__item__grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -20px;
+    .single-item{
+        margin: 20px 0 0 20px;
+        width: calc(100% / 6 - 20px);
+    }
+    @include breakpoint(991px){
+        .single-item{
+            width: calc(100% / 5 - 20px);
+        }
+    }
+    @include breakpoint(767px){
+        .single-item{
+            width: calc(100% / 4 - 20px);
+        }
+    }
+    @include breakpoint(575px){
+        .single-item{
+            width: calc(100% / 3 - 20px);
+        }
+    }
+    @include breakpoint(480px){
+        .single-item{
+            width: calc(100% / 2 - 20px);
+        }
+    }
+    @include breakpoint(375px){
+        .single-item{
+            width: calc(100% - 20px);
+        }
+    }
+}
+
+.icon__item__grid .single-item{
+    background: #FAFBFC;
+    border: 1px solid #EBEDF0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 35px 7px;
+    text-align: center;
+    
+    i{
+        font-size: 20px;
+        color: #596680;
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        color: #596680;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    p{
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+    }
+}

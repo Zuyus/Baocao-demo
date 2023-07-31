@@ -1,0 +1,390 @@
+//dashboar ecommerce style
+//status box style
+.status__box-3{
+    margin-bottom: 30px;
+    padding: 44px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(1399px){
+        //padding: 44px 15px;
+    }
+}
+
+.status__box-3{
+    .item__left{
+        h2{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: #596680;
+        }
+    }
+    .status__box__data{
+        h2{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #273041;
+        }
+        img{
+            margin-left: 10px;
+            width: 16px;
+            height: 10px;
+        }
+    }
+    .status__box__img{
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+        }
+    }
+}
+
+//income statistics style
+.income-statistics__chart__area{
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    padding: 24px 25px 23px;
+}
+
+.income-statistics__chart__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        margin-bottom: 14px;
+        h2{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #273041;
+        }
+    }
+    &__right{
+        margin-bottom: 14px;   
+    }
+    @include breakpoint(480px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.total-income{
+    h2{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #596680;
+        span{
+            color: $primaryColor1;
+        }
+    }
+}
+
+.income-statistics__chart__list .nav.nav-tabs{
+    display: flex;
+    align-items: center;
+    button{
+        border: 0;
+        background-color: transparent;
+        padding: 5px 14px !important;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #596680;
+        &.active{
+            background: #E5EDFE;
+            border-radius: 4px;
+            color: #4D88FF;
+        }
+    }
+}
+
+
+//sales traffic chart area style
+.sales-traffic__chart__area{
+    padding: 24px 25px 24px;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    h2{
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.sales-traffic__chart__area .sales-traffic__legend{
+    margin-top: 29px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 6px;
+    justify-content: center;
+    li a{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #596680;
+        i{
+            font-size: 12px;
+        }
+        span{
+            margin-left: 8px;
+        }
+    }
+    
+    @include breakpoint(991px){
+        grid-column-gap: 20px;
+    }
+    
+    @include breakpoint(767px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        li{
+            margin-left: 20px;
+        }
+    }
+}
+
+//recent reviews style
+.recent-reviews__area{
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    padding: 25px;
+}
+
+.recent-reviews__title{
+    margin-bottom: 10px;
+    h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #273041;
+    }
+}
+
+.recent-reviews__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.recent-reviews__table table{
+    width: 100%;
+    
+    tbody td{
+        padding: 15px 0;
+        border-bottom: 1px solid #ECEDF0;
+        &:nth-child(1){min-width: 220px;}
+    }
+    .product-info{
+        display: flex;
+        align-items: center;
+        &__img{
+            flex: 0 0 50px;
+            background: #F9F9FD;
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        &__text h2{
+            margin-bottom: 2px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #273041;
+        }
+        &__text p{
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+    }
+}
+
+.recent-reviews__table table .rattings{
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+    li{
+        margin-left: 3px;
+        color: #CED2D9;
+        &.active{
+            color: #FFBF00;
+        }
+    }
+}
+
+
+//recent activity style
+.recent-activity__area{
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    padding: 25px;
+}
+
+.recent-activity__top{
+    h2{
+        margin-bottom: 19px;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #273041;
+    }
+    a{
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $primaryColor1;
+    }
+}
+
+.recent-activity__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.recent-activity__table{
+    width: 100%;
+    tbody td{
+        padding: 0 30px;
+    }
+}
+
+
+.recent-activity__table table{
+    tbody tr{
+        position: relative;
+        &::before{
+            position: absolute;
+            z-index: 1;
+            content: "";
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $white;
+            border: 4px solid $primaryColor1;
+        }
+        &::after{
+            position: absolute;
+            z-index: 0;
+            content: "";
+            top: 0;
+            left: 6px;
+            width: 3px;
+            height: 100%;
+            background-color: $primaryColor1;
+        }
+        &:first-child{
+            &::after{
+                height: 50%;
+                top: unset;
+                bottom: 0%;
+            }
+        }
+        &:last-child{
+            &::after{
+                height: 50%;
+                top: 0;
+            }
+        }
+    }
+}
+
+.recent-activity__table table .data-info{
+    padding: 15px 0;
+    border-bottom: 1px solid #ECEDF0;
+    display: flex;
+    align-items: center;
+    &__img{
+        flex: 0 0 40px;
+        margin-right: 15px;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    &__text{
+        h2{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #596680;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: rgba(89, 102, 128, 0.6);
+        }
+    }
+}
+
+
+//recent order style
+.recent-order__area{
+    margin-bottom: 40px;
+    padding: 24px 25px 25px;
+    &__top{
+        h2{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #273041;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.recent-order__table{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.recent-order__table table{
+    width: 100%;
+    thead th{
+        padding: 11px 20px 10px;
+        background: #F5F7FA;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #273041;
+    }
+    tbody td{
+        border-bottom: 1px solid #ECEDF0;
+        padding: 16px 20px 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #596680;
+        &:nth-child(1){min-width: 200px;}
+        &:nth-child(2){min-width: 200px;}
+        &:nth-child(3){min-width: 200px;}
+        &:nth-child(4){min-width: 150px;}
+        &:nth-child(5){min-width: 150px;}
+        &:nth-child(6){min-width: 150px;}
+        &:nth-child(7){min-width: 150px;}
+    }
+}
